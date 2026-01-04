@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+This is a tourism web page for Caldes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+WIREFRAME
 
-## Available Scripts
+  Header
+  
+    Short and visual section, name and coat of arms of the village.
+  Intro
+  
+    . An introductory text.
+    . A video recorded with a drone showing the village.
+    . A map of the municipality, which helps tourists to locate themselves and includes routes to walk and enjoy nature.
+  Main
+  
+    Component in charge of organizing and connecting the main sections of the page.
+  Activities
+  
+    5 activities have been included. Each activity contains: Identifier (id) Name, Brief description,Price and a multimedia element (image or audio) to illustrate the activity.
+  Cart
+  
+    Show all activities added to the cart and allow:
+      ' Add or remove amount of an activity with (+ / ') buttons.
+      . Delete a specific activity.
+      . Empty the whole basket.
+      . Display the total (.) of the order.
+  Footer
+  
+    Contact section for more information. 
+      Includes:
+        Telephone (incomplete for privacy reasons, since the website will be published on GitHub).
+        Address (no specific number for the same reason).
+        Copyright.
 
-In the project directory, you can run:
+DESCRIPTION OF MULTIMEDIA ELEMENTS AND PAGE DESIGN
 
-### `npm start`
+Requirements required at least one video, one audio, and one edited photo.
+All media elements (images, video and audio) are in the public/multimedia/ folder.
+  
+Edited photo: The image used in the Vichy Catalan activity has been edited with GIMP. To make this clear, the file carries “gimp” to the name.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  Video: a drone-engraved video showing the village has been included. It is useful for the user because it gives a global vision of the 
+  municipality in a more intuitive way than seeing only photos or Google Maps.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  Audio: The activity of the book “El fill de l’Italià” has included an audio of the author where he describes the book and how the story arose in Caldes de Malavella.
+  This content can help the user decide if they are interested in buying it.
 
-### `npm test`
+I have decided that each activity has a multimedia element (image or audio) in addition 
+to the description, so that the page is more visual and attractive.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+CSS STYLE
 
-### `npm run build`
+For the design, I have maintained a simple and clear aesthetic, using very soft blue tones. 
+Caldes is a thermal village and water is an important element of the municipality, 
+so I have chosen a palette that represents this idea (blue and degraded).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The page is separated into sections to facilitate navigation and reading. 
+6 main components have been created to maintain an orderly structure:
+Header, Intro, Main, Activities, Cart, Footer.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+INSTRUCCTIONS TO RUN THE WEBSITE
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You need to have Node.js and npm instaled.
+Steps
+  Open the folder in the terminal.
+  Install dependences. (npm install)
+  Start the server (npm start)
+  Open the browser and enter (http://localhost:3000 or the port you have)
 
-### `npm run eject`
+LAST CONSIDERATIONS
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This technical was written by me in my native language Catalan, and translated to English using https://www.softcatala.org/traductor/ 
